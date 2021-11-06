@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "writings",
+  "info": {
+    "name": "Writing",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "topic": {
+      "type": "string"
+    },
+    "topicDescription": {
+      "type": "text"
+    },
+    "topicLink": {
+      "type": "string"
+    }
+  }
+}

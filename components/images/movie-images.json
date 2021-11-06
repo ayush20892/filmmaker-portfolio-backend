@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_images_movie_images",
+  "info": {
+    "name": "Movie Images",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "imageName": {
+      "type": "string"
+    },
+    "imageURL": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

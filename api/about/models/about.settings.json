@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "about",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "filmmakerImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "contentPara1": {
+      "type": "text"
+    },
+    "contentPara2": {
+      "type": "text"
+    },
+    "emailId": {
+      "type": "email"
+    },
+    "resumeDownloadLink": {
+      "type": "string"
+    }
+  }
+}

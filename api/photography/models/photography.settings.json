@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photographies",
+  "info": {
+    "name": "Photography"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "topicNo": {
+      "type": "string"
+    },
+    "photographyTitle": {
+      "type": "string"
+    },
+    "imageArray": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
